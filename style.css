@@ -1,0 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: rgb(241, 241, 241);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+#main-header {
+  background-color: #35424a;
+  color: white;
+  min-height: 70px;
+  padding: 30px 0;
+  border-bottom: 3px solid orangered;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: inline;
+}
+#main-header a:hover{
+  color: black;
+  font-weight: 800;
+}
+
+
+#main-header #branding {
+  float:left;
+}
+#main-header #navbar {
+  float: right;
+}
+#main-header li {
+  display: inline;
+  float: left;
+  list-style: none;
+  padding:10px 20px;
+}
+.highlighter {
+  color: orangered;
+}
+#main-header .current{
+  color: orangered
+}
+#showcase {
+  min-height: 400px;
+  background: url('showcase.jpg') no-repeat 0 -400px;
+  text-align: center; 
+  color: white;
+
+}
+
+#showcase h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#news-letter{
+  background-color: #35424a;
+  padding: 30px;
+  color: white;
+  text-align: center;
+
+}
+#news-letter h3 {
+  float: left;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#news-letter form{
+  float: right;
+}
+#news-letter input[type="email"]{
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  height: 35px;
+  width: 250px;
+}
+#news-letter button{
+  padding: 0 20px;
+  height: 37px;
+  background-color: orangered;
+  border: none;
+  border-radius: 2px;
+}
+.box {
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  margin-right: 20px;
+  
+}
+.box img{
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/*using flex box*/
+/* .flex-container{
+  display: flex;
+  margin: auto;
+  padding: 30px;
+  justify-content: space-between;
+}
+#boxes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#boxes .box1{
+  flex: 1;
+  align-self: center;
+}
+#boxes .box2{
+  flex: 1;
+}
+#boxes .box3{
+  flex: 1;
+}
+
+#boxes h3{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#boxes .box1 img {
+  width: 90px;
+  padding: 10px;
+  margin-bottom: 4px;
+
+}
+#boxes .box2 img {
+  width: 90px;
+  padding: 10px;
+  margin-bottom: 4px;
+}
+#boxes .box3 img {
+  width: 90px;
+  padding: 10px;
+  margin-bottom: 4px;
+}
+*/
+/* sidebar */
+#about {
+  float: left;
+  width: 65%;
+  text-align: center;
+}
+#about p{
+  font-size: 12px;
+}
+#about p,
+#about h1 {
+  margin:20px 5px;
+  text-align: left;
+}
+ #sidebar{
+  float: right;
+  width: 30%;
+  text-align: left;
+  padding: 10px;
+  background-color: #35424a;
+  color: white;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+#sidebar h3,
+#sidebar p {
+  padding: 20px 0 0 0 ;
+}
+/* services */
+#services {
+  float: left;
+  width: 70%; 
+  margin-top: 20px;
+}
+#services h1{
+  margin: 0 20px ;
+}
+.sec {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  margin: 10px 20px;
+  padding: 20px;
+  border: 1px solid rgb(215, 214, 214);
+}
+.sec h3{
+ margin: 17px 0; 
+ font-weight: bold;
+}
+.sec p{
+  margin: 17px 0; 
+ }
+#sidebar2{
+  float: right;
+  width: 30%;
+  background-color: #35424a;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+
+}
+#sidebar2 h3{
+  margin: 17px 0; 
+  font-weight: bold;
+}
+label{
+  display: block;
+  font-size: 17px;
+}
+#sidebar2 input{
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  height: 35px;
+  width: 250px;
+  margin-bottom: 5px;
+}
+#sidebar2 button{
+  padding: 0 20px;
+  height: 37px;
+  background-color: orangered;
+  border: none;
+  border-radius: 2px;
+}
+/* main footer */
+
+#main-footer{
+  clear: both;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  height: 75px;
+}
+#main-footer p{
+  padding: 25px;
+  
+}
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #news-letter h3,
+  #news-letter form,
+  #boxes .box,
+  #about,
+  #sidebar,
+  #services,
+  #sidebar2{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  #showcase h1 {
+    margin-top: 40px;
+  }
+  #news-letter h3{
+    font-size: 15px;
+  }
+  #news-letter button,
+  #sidebar2 button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+  #news-letter input,
+  #sidebar2 input {
+    display: block;
+    width:100%;
+    margin: 5px 0;
+  }
+  #main-footer{
+    margin-top: 2px;
+  }
+}
